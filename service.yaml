@@ -9,7 +9,9 @@ spec:
     app: flask-demo
 
   ports:
-  - port: 80
+  - protocol: TCP
+    port: 80
     targetPort: 5000
+    nodePort:30080
 
   type: NodePort
