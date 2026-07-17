@@ -4,7 +4,7 @@ kind: Deployment
 metadata: 
   name: flask-demo
 
-specs:
+spec:
   replicas: 2
 
   seletor:
