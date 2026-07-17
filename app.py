@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Hello from Jenkins Docker Kubernetes!"
+    return "Hello from Jenkins Docker Kubernetes and auto deploy!"
 
 @app.route("/health")
 def health():
