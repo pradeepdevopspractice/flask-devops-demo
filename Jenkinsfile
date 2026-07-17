@@ -22,10 +22,10 @@ pipeline {
             }
         }
 
-        stage('Deploy to Kubernetes') {
+        stage('check Kubernetes') {
             steps {
-                bat 'kubectl apply -f deployment.yaml'
-                bat 'kubectl apply -f service.yaml'
+                bat 'kubectl config current-context'
+                bat 'kubectl get nodes'
             }
         }
     }
