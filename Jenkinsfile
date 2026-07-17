@@ -3,6 +3,7 @@ pipeline {
     agent any
 
     environment {
+        KUBECONFIG = 'C:\Program Files\Git\config'
         IMAGE_NAME = "flask-demo"
         IMAGE_TAG = "latest"
     }
